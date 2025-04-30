@@ -6,157 +6,46 @@
   <title>Privacy Policy – SIM Selector</title>
   <style>
     body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 1em; line-height: 1.5; }
-    h1, h2, h3 { color: #333; }
-    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-    th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
-    th { background: #f5f5f5; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    h1, h2 { color: #333; }
+    ul { margin-left: 1.5em; }
+    code { background: #f5f5f5; padding: 0.1em 0.3em; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy</h1>
   <p><strong>Effective date:</strong> April 1, 2025</p>
-  <p><strong>SIM Selector</strong> is provided by <strong>SmartServe Labs</strong>. This app is <strong>ad-supported</strong> via Google AdMob.</p>
+  <p><strong>SIM Selector</strong> is provided by <strong>SmartServe Labs</strong> and is ad-supported via Google AdMob.</p>
 
   <h2>1. Information We Collect</h2>
-
-  <h3>1.1 User-Provided Information</h3>
-  <p><em>None required.</em> You can use all core features (Dialer, Call History, Contacts, Settings) without signing up or sharing personal details.</p>
-
-  <h3>1.2 Automatically Collected Information</h3>
-  <p>The app may collect the following data <strong>only when you use</strong> the related feature:</p>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Data Type</th>
-        <th>When Collected</th>
-        <th>Purpose</th>
-        <th>Shared With</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Call logs</strong></td>
-        <td>Opening the <em>Call History</em> tab</td>
-        <td>Display recent calls (App functionality)</td>
-        <td>Not shared</td>
-      </tr>
-      <tr>
-        <td><strong>Contacts list</strong></td>
-        <td>Opening the <em>Contacts</em> tab</td>
-        <td>Enable dialing from your phonebook (App functionality)</td>
-        <td>Not shared</td>
-      </tr>
-      <tr>
-        <td><strong>Device identifiers</strong><br/>(<code>READ_PHONE_STATE</code>)</td>
-        <td>At startup or SIM-state checks</td>
-        <td>Detect active SIM slot (App functionality)</td>
-        <td>Not shared</td>
-      </tr>
-      <tr>
-        <td><strong>Advertising ID</strong></td>
-        <td>When loading ads</td>
-        <td>Serve & target ads (Advertising)</td>
-        <td>Google/AdMob</td>
-      </tr>
-      <tr>
-        <td><strong>Approximate location</strong><br/>(IP-based)</td>
-        <td>When loading ads</td>
-        <td>Personalize ads (Advertising)</td>
-        <td>Google/AdMob</td>
-      </tr>
-      <tr>
-        <td><strong>Usage-access & background state</strong></td>
-        <td>Opening the <em>Settings / Power</em> screen</td>
-        <td>Ensure uninterrupted call-routing under battery optimizations</td>
-        <td>Not shared</td>
-      </tr>
-      <tr>
-        <td><strong>Installed apps</strong></td>
-        <td>When checking background restrictions</td>
-        <td>Diagnose OS-level background-blocking (App functionality)</td>
-        <td>Not shared</td>
-      </tr>
-    </tbody>
-  </table>
+  <p>This app itself does <strong>not</strong> collect, store, or transmit any personal, call-log, contact, or location data. All call logs and contacts are read <em>in-memory</em> for display only; nothing is saved or shared by the app.</p>
+  <p>The embedded Google AdMob SDK may collect:</p>
+  <ul>
+    <li><strong>Advertising ID</strong>: to serve and target ads</li>
+    <li><strong>Device identifiers</strong> (Advertising ID & other IDs): for ad delivery and measurement</li>
+    <li><strong>Approximate location</strong> (IP-based): to personalize ads</li>
+  </ul>
 
   <h2>2. How We Use Information</h2>
   <ul>
-    <li><strong>App functionality:</strong> Power the four tabs—Dialer, Call History, Contacts, and Settings (SIM-prefix mapping).</li>
-    <li><strong>Advertising:</strong> Serve relevant ads via Google AdMob using Advertising ID & approximate location.</li>
-    <li><strong>Performance & reliability:</strong> Detect battery optimizations, background restrictions, and App Standby Bucket to keep call routing reliable.</li>
+    <li><strong>App features:</strong> Dialer calls, in-memory display of call logs & contacts, SIM-mapping settings.</li>
+    <li><strong>Ads:</strong> Google AdMob uses collected IDs & location to deliver and measure ads.</li>
   </ul>
 
   <h2>3. Data Sharing</h2>
-  <p><strong>Google/AdMob</strong> receives only your Advertising ID and approximate location for ad delivery. <strong>No</strong> other data (call logs, contacts, usage state, installed apps) is shared.</p>
+  <p>Only the Advertising ID, device identifiers, and approximate location are shared <em>with Google/AdMob</em> for advertising purposes. No other data is transmitted off-device.</p>
 
-  <h2>4. Permissions & In-Context Requests</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Permission</th>
-        <th>Requested When</th>
-        <th>Explanation Shown</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><code>CALL_PHONE</code></td>
-        <td>Placing a call in the <em>Dialer</em> tab</td>
-        <td>“We need CALL_PHONE to place your call via the correct SIM.”</td>
-      </tr>
-      <tr>
-        <td><code>READ_CALL_LOG</code></td>
-        <td>Opening the <em>Call History</em> tab</td>
-        <td>“We need READ_CALL_LOG to show your recent calls.”</td>
-      </tr>
-      <tr>
-        <td><code>WRITE_CALL_LOG</code></td>
-        <td>Opening the <em>Call History</em> tab</td>
-        <td>“We need WRITE_CALL_LOG to keep your call history up to date.”</td>
-      </tr>
-      <tr>
-        <td><code>READ_CONTACTS</code></td>
-        <td>Opening the <em>Contacts</em> tab</td>
-        <td>“We need READ_CONTACTS to let you dial from your contacts.”</td>
-      </tr>
-      <tr>
-        <td><code>PACKAGE_USAGE_STATS</code></td>
-        <td>Opening the <em>Settings / Power</em> screen</td>
-        <td>“We need Usage Access to detect battery restrictions.”</td>
-      </tr>
-      <tr>
-        <td><code>FOREGROUND_SERVICE</code></td>
-        <td>When running the call-routing service<br/>(app startup & standby)</td>
-        <td>“Ensures uninterrupted call routing in the background.”</td>
-      </tr>
-    </tbody>
-  </table>
+  <h2>4. Permissions Requested at Setup</h2>
+  <p>Upon first launch, during the initial setup stage, the app will ask you to grant these permissions. Each request is accompanied by an on-screen explanation:</p>
+  <ul>
+    <li><code>CALL_PHONE</code> – to place calls via the correct SIM</li>
+    <li><code>READ_CALL_LOG</code> / <code>WRITE_CALL_LOG</code> – to display and update recent calls in the Call History tab</li>
+    <li><code>READ_CONTACTS</code> – to display your contact list in the Contacts tab</li>
+    <li><code>PACKAGE_USAGE_STATS</code> – to check battery & background restrictions so the call-routing service remains active</li>
+    <li><code>FOREGROUND_SERVICE</code> – to keep the call-routing service running uninterrupted</li>
+  </ul>
+  <p>No permission is requested silently; you must explicitly approve each one to proceed.</p>
 
-  <h2>5. Data Retention & Deletion</h2>
-  <p>
-    <strong>Call logs & contacts:</strong> Stored only in-app; deleted when you clear history or uninstall.<br/>
-    <strong>Device IDs, Advertising ID, IP info:</strong> Retained up to 24 months, then anonymized or deleted.<br/>
-    <strong>Usage-access & background state:</strong> Checked on demand; not stored.<br/>
-    To request deletion of any data, email us at <a href="mailto:privacy@smartservelabs.com">privacy@smartservelabs.com</a>.
-  </p>
-
-  <h2>6. Children’s Privacy</h2>
-  <p>We do <strong>not</strong> knowingly collect data from anyone under 13. If you believe a child under 13 has provided data, contact us to have it deleted.</p>
-
-  <h2>7. Security</h2>
-  <p>We use reasonable administrative, technical, and physical safeguards to protect your information. No system is completely foolproof, so use the App at your own discretion.</p>
-
-  <h2>8. Changes to This Policy</h2>
-  <p>We may update this policy at any time; the <strong>effective date</strong> will change when we post a new version. Continued use after changes constitutes acceptance.</p>
-
-  <h2>9. Contact Us</h2>
-  <p>
-    <strong>SmartServe Labs</strong><br/>
-    Email: <a href="mailto:privacy@smartservelabs.com">privacy@smartservelabs.com</a><br/>
-    Generated with help from App Privacy Policy Generator.
-  </p>
+  <h2>5. Changes to This Policy</h2>
+  <p>We may update this policy at any time. Continued use after changes constitutes acceptance.</p>
 </body>
 </html>
